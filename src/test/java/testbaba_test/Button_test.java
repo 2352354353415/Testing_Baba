@@ -43,8 +43,6 @@ public class Button_test extends Base_test
     public void click_on_double_click()
     {
         ob.click_double_click();
-
-
     }
 
 

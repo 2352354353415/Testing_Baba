@@ -4,15 +4,17 @@ import base_liybreary.Base_test;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import testbaba_pages.Menu_Page;
+import testbaba_pages.Select_menu_Page;
 
-public class Menu_test extends Base_test
+public class Select_menu_test extends Base_test
 {
-    Menu_Page ob;
+    Select_menu_Page ob;
+
     @BeforeTest
     public void geturllaunch()
     {
         getlaunch();
-        ob = new Menu_Page();
+        ob = new Select_menu_Page();
     }
 
     @Test(priority = 1)
@@ -22,13 +24,20 @@ public class Menu_test extends Base_test
     }
 
     @Test(priority = 2)
-    public void click_on_menu()
+    public void click_on_select_menu()
     {
-        ob.menu_click();
+        ob.select_menu_click();
     }
+
     @Test(priority = 3)
-    public void click_on_services()
+    public void click_on_select_value()
     {
-        ob.services_click();
+        ob.select_value_click();
+    }
+
+    @Test(priority = 4)
+    public void click_on_one_value()
+    {
+        ob.select_one_click();
     }
 }

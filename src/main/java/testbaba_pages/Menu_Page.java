@@ -2,16 +2,13 @@ package testbaba_pages;
 
 import application_uitility.Application_uitility;
 import base_liybreary.Base_test;
-import org.checkerframework.checker.units.qual.A;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Auto_complete_Page extends Base_test
+public class Menu_Page extends Base_test
 {
-    public Auto_complete_Page()
+    public Menu_Page()
     {
         PageFactory.initElements(driver, this);
     }
